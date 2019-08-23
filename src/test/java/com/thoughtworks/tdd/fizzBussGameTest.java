@@ -34,12 +34,32 @@ public class fizzBussGameTest {
 		//when
 		String word = fizzBussGameNew.fizzBuss(number);
 		//then
+		Assertions.assertEquals("whiss", word);
+	}
+	@Test
+	public void fizzBuss_given_5_then_buzz() {
+		//given
+		int number = 5;
+		fizzBussGame fizzBussGameNew =new fizzBussGame();
+		//when
+		String word = fizzBussGameNew.fizzBuss(number);
+		//then
 		Assertions.assertEquals("buss", word);
 	}
 	@Test
 	public void fizzBuss_given_21_then_fizzBuss() {
 		//given
 		int number = 21;
+		fizzBussGame fizzBussGameNew = new fizzBussGame();
+		//when
+		String word = fizzBussGameNew.fizzBuss(number);
+		//then
+		Assertions.assertEquals("fizzWhiss", word);
+	}
+	@Test
+	public void fizzBuss_given_15_then_fizzBuss() {
+		//given
+		int number = 15;
 		fizzBussGame fizzBussGameNew = new fizzBussGame();
 		//when
 		String word = fizzBussGameNew.fizzBuss(number);
