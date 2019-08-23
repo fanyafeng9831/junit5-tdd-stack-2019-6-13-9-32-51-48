@@ -76,5 +76,15 @@ public class fizzBussGameTest {
 		//then
 		Assertions.assertEquals("bussWhiss", word);
 	}
+	@Test
+	public void fizzBuss_given_105_then_fizzBuss() {
+		//given
+		int number = 105;
+		fizzBussGame fizzBussGameNew = new fizzBussGame();
+		//when
+		String word = fizzBussGameNew.fizzBuss(number);
+		//then
+		Assertions.assertEquals("fizzBussWhiss", word);
+	}
 
 }
