@@ -7,6 +7,12 @@ public class fizzBussGame {
 		if(number%3==0&&number%7==0) {
 			return "fizzWhiss";
 		}
+		else if(number%3==0&&number%5==0) {
+			return "fizzBuss";
+		}
+		else if(number%5==0&&number%7==0) {
+			return "bussWhiss";
+		}
 		else if(number%7==0) {
 			return "whiss";
 		}
